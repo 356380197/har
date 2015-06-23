@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>会员图秀</title>
+    <link rel="stylesheet" type="text/css" href="../css/member_show.css"/>
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/hhSwipe.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="../js/waterfalltwo.js"></script>
+	<script type="text/javascript">
+			//图片轮播
+	window.onload = function(){
+		var bullets = document.getElementById('position').getElementsByTagName('li');
+		var banner = Swipe(document.getElementById('mySwipe'), {
+			auto: 4000,
+			continuous: true,
+			disableScroll:false,
+			callback: function(pos) {
+				var i = bullets.length;
+				while (i--) {
+					bullets[i].className = ' ';
+				}
+				bullets[pos].className = 'cur';
+			}
+		})
+		}
+	</script>	
+<style>
+	
+</style>
+</head>
+<body>
+	<div class="page">
+		<!--轮播-->
+		<div class="addWrap">
+			<div class="swipe" id="mySwipe">
+				<div class="swipe-wrap">
+					
+					<div><a href="{$row['href']}"><img class="img-responsive" src="../img/signboard.jpg"/></a></div>
+					<div><a href="{$row['href']}"><img class="img-responsive" src="../img/signboard.jpg"/></a></div>
+					<div><a href="{$row['href']}"><img class="img-responsive" src="../img/signboard.jpg"/></a></div>
+				</div>
+			</div>
+			<ul id="position">
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--轮播结束-->
+		<div class="nav">
+			<ul>
+				<li>店面图册</li>
+				<li>会员秀图</li>
+				<li><select name="">
+					<option value="">最新</option>
+					<option value="">最新</option>
+				</select></li>
+			</ul>
+		</div>
+		
+		<div id="main">
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img02.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img03.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：多场，十大啊大大的阿达大大大阿</p>
+				<ul>
+					<li class="bottom_l"><b class="love_2"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img03.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img05.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img06.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img07.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img08.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img09.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img10.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img11.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img12.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img13.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img14.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="../img/temp_img15.jpg"/>
+			</div>
+			<div class="bottom">
+				<p>备注：</p>
+				<ul>
+					<li class="bottom_l"><b class="love_1"></b>1325</li>
+					<li class="bottom_r">2015/05/20</li>
+				</ul>
+				<div class="head_img">
+					<img src="../img/icon_10.png"/>
+				</div>	
+				<span clss="man_name">
+					王小丫
+				</span>
+			</div>
+		</div>
+	</div>
+		
+	</div>
+	<footer>
+		<div class="footer_my">
+			<b class="man" ></b>
+			<p>我的</p>
+		</div>
+		<div class="foot_hr">
+			
+		</div>
+		<div class="footer_show">
+			<b class="camera"></b>
+			<p>我要秀下</p>
+		</div>
+	</footer>>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

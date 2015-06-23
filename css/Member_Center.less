@@ -1,0 +1,200 @@
+.reset{
+    padding: 0px;
+    margin: 0px;
+}
+.cl(@color){
+    color:@color;  
+}
+.posi(@po){
+    position:@po;
+}
+.b-radius(@radius:10px){
+    -webkit-border-radius:@radius;
+    -moz-border-radius:@radius;
+     border-radius:@radius;
+}
+
+.wid(@width:100%){
+    width: @width;
+}
+.lf(@le:left){
+    float: @le;
+}
+.ft(@ft:14px){
+    font-size: @ft;
+}
+.mar(@t,@r,@b,@l){
+    margin: @t @r @b @l;
+}
+.clearfix{
+    clear: both;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    .cl(white);
+    .ft()
+}
+body,ul,li,p,h1,h3,h6{
+   .reset;   
+}
+h3{
+    .cl(white);
+    font-weight: normal;
+}
+body{
+    .ft();
+    background: url(../img/bg.png) no-repeat,url(../img/bg.png) 100% 100%;
+    background-size:100% ;
+}
+.page{
+    .posi(relative);
+    width: 90%;
+    margin:0 auto ;
+    margin-bottom: 60px;
+}
+.man_header{
+    .posi(absolute);
+    top:20px;
+    left: 50%;
+    .wid(60px);
+    height: 60px;
+    background: url(../img/icon_07.png) no-repeat;
+    background-size:100% ;
+    margin-left:-38px ;
+    border:3px solid #7f6f68 ;
+    .b-radius(50%);    
+}
+.information{
+    .clearfix;
+    .wid();
+    height: 150px;
+    background: rgba(0,0,0,.5);
+    .b-radius(); 
+    .lf();
+    margin-top: 55px;
+    text-align: center;
+    ul{
+        overflow: hidden;
+       margin-top: 18px;
+    }
+    li{
+       .lf();
+       .cl(#facd89);
+       margin-left: 8%;
+    }
+    b{;
+        .wid(7px);
+        height: 10px;
+        background: url(../img/icon_07.png) no-repeat;
+        background-size:100% ;
+        display: block;
+        .lf(right);
+        margin: -13px 8% 0px 0px;
+
+    }
+}
+.information h3:nth-child(1){
+    margin-top:40px ;
+}
+.information h3:nth-child(2){
+    margin-top:5px ;
+}
+.hr_ring{
+    .wid();
+    height: 1px;
+    background: url(../img/icon_03.png);
+    background-size: 100%;
+    margin-top: 15px;
+}
+.list_man{
+    .cl(white);
+    margin-top: 30px;
+    margin-bottom: 60px;
+    min-height: 270px;
+    li{
+        border-bottom: 1px solid #6a5b53;
+        line-height: 35px;
+        .ft(12px);
+  
+    }
+    b {
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      .lf();
+      margin:7px 10px 0px 0px ;
+    }
+    i{
+        
+        display: inline-block;
+        width: 9px;
+        height: 15px;
+        background:url(../img/icon_22.png) no-repeat;
+        background-size:100% ;
+        .lf(right);
+        margin: 9px 10px 0px 0px ;
+    }
+    li:nth-child(1){
+        border-top:1px solid  #6a5b53;
+        b{
+            background: url(../img/icon_11.png) no-repeat;
+            background-size:100% ;
+        }
+    }
+      li:nth-child(2){
+          b{
+            background: url(../img/icon_15.png) no-repeat;
+            background-size:100% ;
+          }
+      }
+     li:nth-child(3){
+          b{
+            background: url(../img/icon_15.png) no-repeat;
+            background-size:100% ;
+          }
+      }
+       li:nth-child(4){
+          b{
+            background: url(../img/icon_17.png) no-repeat;
+            background-size:100% ;
+          }
+      }
+       li:nth-child(5){
+          b{
+            background: url(../img/icon_20.png) no-repeat;
+            background-size:100% ;
+          }
+      }
+    
+}
+.footer{
+    width:100%;
+    height: 50px;;
+    background: black;
+    opacity:;
+    position: fixed;
+    bottom: 0;
+}
+.myself{
+    .wid();
+    text-align: center;
+     h6{
+        .ft(12px);
+        .cl(white);
+        font-weight: normal;
+    }
+}
+.mylogo{
+    width: 50px;
+    height: 33px;
+    background: url(../img/icon_27.png) no-repeat;
+    background-size:100% ;
+    margin: 10px auto 0px auto;
+   
+    
+}
+

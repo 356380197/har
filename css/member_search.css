@@ -1,0 +1,147 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,li{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	color: ;
+}
+body{
+	background: url(../img/bg_04.png) no-repeat;
+	background-size:100% ;
+	background-color: #322117;
+}
+i{
+	font-style: normal;
+}
+b{
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.page{
+	width: 90%;
+	margin: 0 auto;
+	min-height: 580px;
+	margin-bottom: 70px;
+	position: relative;
+
+}
+.out{
+	width: 100%;
+	border: 1px solid #4f3b29;
+	height: 35px;
+ 	border-radius: 5px;
+ 	margin-top: 20px;
+ 	overflow: hidden;
+}
+.search h3{
+	color: #c6a963;
+	margin-top: 20px;
+}
+
+.search ul {
+  overflow: hidden;
+}
+
+.search li{
+	float: left;
+}
+.search li input{
+	border: none;
+	background:rgba(0,0,0,.2) ;
+	height: 33px;
+	width: 100%;
+	padding-left: 7px;
+}
+.search li input[type="button"]{
+	
+	background: url(../img/search_03.png) repeat 0 3px;
+	background-size:100% ;
+	height: 35px;
+}
+.search li:nth-child(1){
+	width: 80%;
+}
+.search li:nth-child(2){
+	width: 20%;
+}
+input::-webkit-input-placeholder {
+  color: #866a48;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*风尚雅意 logo*/
+.my_logo{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+  	width: 120px;
+	height: 50px;
+	background: url(../img/icon_27.png) no-repeat 30px 0px;;
+	background-size:45% ;
+	color: #9b928c;
+	font-size: 12px;
+	margin-left: -60px;
+}
+.my_logo span{
+  margin-top: 40px;
+  float: left;
+}
+hr {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  padding: 0px;
+  /* margin: 0px; */
+  border-top: 1px;
+  border-color: #675950;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+	.page{
+	 	min-height: 640px;
+	 } 
+	 .search li input[type="button"]{
+	background: url(../img/search_03.png) repeat 0 2px;
+	background-size:100% ;
+}
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+	.page{
+		min-height: 675px;
+	}
+	 .search li input[type="button"]{
+	background: url(../img/search_03.png) repeat 0 2px;
+	background-size:100% ;
+}
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+	.page{
+		min-height: 750px;
+	}
+	 .search li input[type="button"]{
+	background: url(../img/search_03.png) repeat 0 0px;
+	background-size:100% ;
+}
+}

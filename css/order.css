@@ -1,0 +1,168 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,li{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	color: ;
+}
+body{
+	background: url(../img/bg_04.png) no-repeat;
+	background-size:100% ;
+	background-color: #322117;
+}
+i{
+	font-style: normal;
+}
+b{
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.page{
+	min-height: 580px;
+	margin-bottom: 70px;
+	position: relative;
+	  padding-bottom: 35px;
+}
+.board {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.board img {
+  width: 100%;
+  height: auto;
+  border: 0px;
+  display: block;
+}
+.member_information {
+  width: 90%;
+  margin: 0 auto;
+}
+h3{
+	color: #c6a963;
+	margin-top: 10px;
+} 
+.main_infor {
+	overflow: hidden;
+	margin-top: 5px;
+}
+.main_infor li{
+	color: #d2d2d2;
+	float: left;
+	padding-left: 14px;
+}
+.main_infor li:nth-child(2){
+	float:right;
+}
+
+.main_sel {
+  width: 100%;
+  height: 270px;
+  background: rgba(0,0,0,.2);
+  border: 1px solid #4c3a24;
+  margin-top: 10px;
+  border-radius: 5px;
+
+}
+.main_sel ul{
+  padding: 0 10px;
+   margin-top: 10px;
+
+  }
+.main_sel li{
+	color: #d1c0a5;
+    padding: 8px 0 5px 0;
+  border-bottom: 1px solid #746966;
+}
+}
+input,select{
+	border: none;
+}
+select {
+  width: 71%;
+  background: none;
+  border: 0;
+  color: #837260;
+}
+.last select{
+	width: 66%;
+}
+input[type="submit"]{
+	background: #ab9358;
+	width: 100%;
+	padding: 8px 0;
+	border-radius:3px ;
+	margin-top: 20px;
+	font-size: 14px;
+	-webkit-appearance: none; 
+	color: #422404;
+	font-weight:600;
+	border: 0px;
+}
+.review{
+	  text-align: center;
+	  margin-top: 10px;
+}
+textarea {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #503c25;
+  width: 90%;
+  height: 60px;
+  resize: no;
+  background: none;
+  color: #746351;
+  resize: none;
+  padding: 4px;
+}
+textarea::-webkit-input-placeholder {
+  color: #746351;
+}
+
+.my_logo{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+  	width: 120px;
+	height: 50px;
+	background: url(../img/icon_27.png) no-repeat 30px 0px;;
+	background-size:45% ;
+	color: #9b928c;
+	font-size: 12px;
+	margin-left: -60px;
+}
+.my_logo span{
+  margin-top: 40px;
+  float: left;
+}
+hr {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  padding: 0px;
+  /* margin: 0px; */
+  border-top: 1px;
+  border-color: #675950;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+	.page{
+	 	min-height: 640px;
+	 } 
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+	.page{
+		min-height: 675px;
+	}
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+	.page{
+		min-height: 750px;
+	}
+}
