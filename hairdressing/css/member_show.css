@@ -36,7 +36,7 @@ a:hover{ text-decoration:none;}
 	line-height: 34px;
 	font-size: 14px;
 }
-.nav ul li:nth-child(1){
+.nav ul li:nth-child(2){
 	color: #facd89;
 	border-bottom: 1px solid #facd89;
 }
@@ -79,6 +79,7 @@ a:hover{ text-decoration:none;}
 	position: relative;
 	
 }
+
 .pic{
 	overflow: hidden;
 	padding: 0px;
@@ -94,7 +95,7 @@ a:hover{ text-decoration:none;}
 }
 .bottom{
 	width: 97%;
-	height: 50px;
+	height: 75px;
 	position: absolute;
 	bottom: 7px;
 	right: 0;
@@ -137,6 +138,27 @@ a:hover{ text-decoration:none;}
 }
 .bottom_l,.bottom_r{
 	padding: 0 5px;
+}
+
+.head_img {
+  width: 21px;
+  height: 21px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0px 5px 0 5px;
+
+}
+.head_img img{
+	width:100%;
+	height: auto;
+	
+}
+.bottom span{
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-size: 12px;
 }
 /*footer*/
 footer {
@@ -196,24 +218,27 @@ footer p {
   		margin-left: 30%;
 	}
 }
-/*@media only screen and (min-width: 321px) and (max-width: 360px) {
+@media only screen and (min-width: 321px) and (max-width: 360px) {
 	.pic img{
-	width: 150px;
+	width: 170px;
 	height: auto;
 }
 
 }
 @media only screen and (min-width: 361px) and (max-width: 375px) {
 .pic img{
-	width: 150px;
+	width: 180px;
 	height: auto;
 }
 
 }
 @media only screen and (min-width: 376px) and (max-width: 414px) {
+	
 	.pic img{
-	width: 155px;
+	width: 200px;
 	height: auto;
 }
-
-}*/
+	.bottom{
+	width: 98%;
+	}
+}

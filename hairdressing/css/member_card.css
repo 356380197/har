@@ -24,7 +24,7 @@ li{
 .page {
  	width: 90%;
 	margin: 0 auto;
-	min-height: 580px;
+	min-height: 555px;
 	margin-bottom: 70px;
 	position: relative;
 }
@@ -36,7 +36,7 @@ li{
 .card img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 .information {
   margin-top: 20px;
@@ -121,19 +121,19 @@ hr {
 
 @media only screen and (min-width: 321px) and (max-width: 360px) {
 	.page{
-	 	min-height: 640px;
+	 	min-height: 555px;
 	 } 
 }
 
 @media only screen and (min-width: 361px) and (max-width: 375px) {
 	.page{
-		min-height: 675px;
+		min-height: 570px;
 	}
 }
 
 @media only screen and (min-width: 376px) and (max-width: 414px) {
 	.page{
-		min-height: 750px;
+		min-height: 600px;
 	}
 }
 
